@@ -8,11 +8,15 @@ function preload(){
 }
 
 function setup(){
-    createCanvas(500,500);
+    createCanvas(windowWidth , windowHeight);
 
-    background(255,0,0);
+    background(0,0,0);
 }
 
 function draw(){
-    background(255,0,0);
+    background(0,0,0);
 }
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
